@@ -1,0 +1,35 @@
+﻿<Window x:Class="DoctorClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DoctorClient"
+        mc:Ignorable="d"
+        Title="DoctorWelcome" WindowState="Maximized"
+        WindowStyle="None">
+    <Grid>
+        <Label Content="Üdvözöljük!" HorizontalAlignment="Center" Margin="0,50,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="100"/>
+        <ListView ItemsSource="{Binding PatientList}" PreviewMouseDoubleClick="PatientListView_PreviewMouseDoubleClick" PreviewMouseRightButtonUp="DeletePatientMouseRight_Click" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Width="300" Height="300" Margin="0,0,0,0" Name="PatientListView">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="TAJ-szám" Width="100" DisplayMemberBinding="{Binding SSN}" />
+                    <GridViewColumn Header="Név" Width="200" DisplayMemberBinding="{Binding Name}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <StackPanel Name="PatientView" HorizontalAlignment="Center" Margin="0,0,0,0" Height="300" VerticalAlignment="Center" Width="300">
+            <Label Content="Beteg adatai"/>
+            <Label Content="TAJ-szám" Margin="0,0,198,0"/>
+            <TextBox IsReadOnly="True" Height="23" TextWrapping="NoWrap" Text="{Binding SelectedItem.SSN, ElementName=PatientListView}" Margin="10,0" RenderTransformOrigin="1.508,0.607"/>
+            <Label Content="Név" Margin="0,0,198,0"/>
+            <TextBox IsReadOnly="True" Height="23" TextWrapping="NoWrap" Text="{Binding SelectedItem.Name, ElementName=PatientListView}" Margin="10,0" RenderTransformOrigin="1.508,0.607"/>
+            <Label Content="Cím" Margin="0,0,198,0"/>
+            <TextBox IsReadOnly="True" Height="23" TextWrapping="NoWrap" Text="{Binding SelectedItem.Address, ElementName=PatientListView}" Margin="10,0" RenderTransformOrigin="1.508,0.607"/>
+            <Label Content="Panasz" Margin="0,0,198,0"/>
+            <TextBox IsReadOnly="True" Height="50" TextWrapping="Wrap" Text="{Binding SelectedItem.Complaint, ElementName=PatientListView}" Margin="10,0" RenderTransformOrigin="1.508,0.607"/>
+            <Button Content="Bezár" HorizontalAlignment="Center" Margin="0,15,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="100" Click="ClosePatientDetailsButton_Click"/>
+        </StackPanel>
+        <Button Content="Kilépés" HorizontalAlignment="Center" Margin="0,0,0,50" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="150" Click="CloseButton_Click"/>
+
+    </Grid>
+</Window>
