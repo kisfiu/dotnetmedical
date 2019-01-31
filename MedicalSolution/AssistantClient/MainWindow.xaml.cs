@@ -57,12 +57,14 @@ namespace AssistantClient
         private void NewPatientButton_Click(object sender, RoutedEventArgs e)
         {
             this.PatientListView.Visibility = Visibility.Hidden;
+            this.PatientView.Visibility = Visibility.Hidden;
             this.NewPatientView.Visibility = Visibility.Visible;
         }
 
         private void PatientsButton_Click(object sender, RoutedEventArgs e)
         {
             this.NewPatientView.Visibility = Visibility.Hidden;
+            this.PatientView.Visibility = Visibility.Hidden;
             this.PatientListView.Visibility = Visibility.Visible;
         }
 
@@ -82,7 +84,9 @@ namespace AssistantClient
             } //clear data
 
             this.NewPatientView.Visibility = Visibility.Hidden;
+            this.PatientView.Visibility = Visibility.Hidden;
             this.PatientListView.Visibility = Visibility.Visible;
+
         }
 
         private void CancelAddingPatientButton_Click(object sender, RoutedEventArgs e)
@@ -94,13 +98,16 @@ namespace AssistantClient
             } //clear data
 
             this.NewPatientView.Visibility = Visibility.Hidden;
+            this.PatientView.Visibility = Visibility.Hidden;
             this.PatientListView.Visibility = Visibility.Visible;
+
         }
 
         private void PatientListView_PreviewMouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             dt.Stop();
             this.PatientListView.Visibility = Visibility.Hidden;
+            this.NewPatientView.Visibility = Visibility.Hidden;
             this.PatientView.Visibility = Visibility.Visible;
         }
 
@@ -114,6 +121,7 @@ namespace AssistantClient
             Task t = SaveAndUpdateEdit(patient);
 
             this.PatientView.Visibility = Visibility.Hidden;
+            this.NewPatientView.Visibility = Visibility.Hidden;
             this.PatientListView.Visibility = Visibility.Visible;
             dt.Start();
         }
@@ -121,6 +129,7 @@ namespace AssistantClient
         private void CancelEditingPatientButton_Click(object sender, RoutedEventArgs e)
         {
             this.PatientView.Visibility = Visibility.Hidden;
+            this.NewPatientView.Visibility = Visibility.Hidden;
             this.PatientListView.Visibility = Visibility.Visible;
             dt.Start();
         }

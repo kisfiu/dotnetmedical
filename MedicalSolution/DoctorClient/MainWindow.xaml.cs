@@ -86,11 +86,12 @@ namespace DoctorClient
             if (sender is ListView)
             {
                 ListView list = (ListView)sender;
+                Patient patient = (Patient)list.SelectedItem; //probléma - SelectedItem null & -1 SelectedIndex - pedig benne van a listában
+
 
                 MessageBoxResult messageBoxResult = System.Windows.MessageBox.Show("Biztosan törli a beteget?", "Törlés", System.Windows.MessageBoxButton.YesNo);
                 if (messageBoxResult == MessageBoxResult.Yes)
                 {
-                    Patient patient = (Patient)list.SelectedItem; //probléma - SelectedItem null & -1 SelectedIndex - pedig benne van a listában
                     DeleteAndUpdate(patient);
                 }
                 else

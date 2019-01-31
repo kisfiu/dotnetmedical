@@ -21,3 +21,26 @@ C:\Users\Dora Dusyn\git\MedicalSolution\MedicalSolution\DoctorClient\bin\Debug\N
 C:\Users\Dora Dusyn\git\MedicalSolution\MedicalSolution\DoctorClient\bin\Debug\System.Net.Http.Formatting.dll
 C:\Users\Dora Dusyn\git\MedicalSolution\MedicalSolution\DoctorClient\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Dora Dusyn\git\MedicalSolution\MedicalSolution\DoctorClient\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\sztra\.net\MedicalSolution\DoctorClient\bin\Debug\DoctorClient.exe.config
+C:\Users\sztra\.net\MedicalSolution\DoctorClient\bin\Debug\DoctorClient.exe
+C:\Users\sztra\.net\MedicalSolution\DoctorClient\bin\Debug\DoctorClient.pdb
+C:\Users\sztra\.net\MedicalSolution\DoctorClient\bin\Debug\AssistantClient.exe
+C:\Users\sztra\.net\MedicalSolution\DoctorClient\bin\Debug\Newtonsoft.Json.dll
+C:\Users\sztra\.net\MedicalSolution\DoctorClient\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\sztra\.net\MedicalSolution\DoctorClient\bin\Debug\AssistantClient.pdb
+C:\Users\sztra\.net\MedicalSolution\DoctorClient\bin\Debug\AssistantClient.exe.config
+C:\Users\sztra\.net\MedicalSolution\DoctorClient\bin\Debug\Newtonsoft.Json.xml
+C:\Users\sztra\.net\MedicalSolution\DoctorClient\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\sztra\.net\MedicalSolution\DoctorClient\obj\Debug\DoctorClient.csprojAssemblyReference.cache
+C:\Users\sztra\.net\MedicalSolution\DoctorClient\obj\Debug\MainWindow.g.cs
+C:\Users\sztra\.net\MedicalSolution\DoctorClient\obj\Debug\App.g.cs
+C:\Users\sztra\.net\MedicalSolution\DoctorClient\obj\Debug\DoctorClient_MarkupCompile.cache
+C:\Users\sztra\.net\MedicalSolution\DoctorClient\obj\Debug\DoctorClient_MarkupCompile.lref
+C:\Users\sztra\.net\MedicalSolution\DoctorClient\obj\Debug\MainWindow.baml
+C:\Users\sztra\.net\MedicalSolution\DoctorClient\obj\Debug\DoctorClient.g.resources
+C:\Users\sztra\.net\MedicalSolution\DoctorClient\obj\Debug\DoctorClient.Properties.Resources.resources
+C:\Users\sztra\.net\MedicalSolution\DoctorClient\obj\Debug\DoctorClient.csproj.GenerateResource.cache
+C:\Users\sztra\.net\MedicalSolution\DoctorClient\obj\Debug\DoctorClient.csproj.CoreCompileInputs.cache
+C:\Users\sztra\.net\MedicalSolution\DoctorClient\obj\Debug\DoctorClient.csproj.CopyComplete
+C:\Users\sztra\.net\MedicalSolution\DoctorClient\obj\Debug\DoctorClient.exe
+C:\Users\sztra\.net\MedicalSolution\DoctorClient\obj\Debug\DoctorClient.pdb
